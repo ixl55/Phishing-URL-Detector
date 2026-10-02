@@ -1,0 +1,22 @@
+[project]
+name = "phishing-url-detector"
+version = "1.0.0"
+description = "Offline heuristic phishing URL detector with a FastAPI backend"
+requires-python = ">=3.10"
+
+[tool.pytest.ini_options]
+pythonpath = ["."]
+testpaths = ["tests"]
+
+[tool.ruff]
+line-length = 120
+target-version = "py310"
+
+[tool.ruff.lint]
+select = ["E", "F", "I", "B", "UP"]
+
+[tool.ruff.lint.flake8-bugbear]
+extend-immutable-calls = ["fastapi.Depends", "fastapi.Query"]
+
+[tool.ruff.lint.per-file-ignores]
+"app/core/messages.py" = ["E501"]

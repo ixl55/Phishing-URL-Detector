@@ -1,0 +1,93 @@
+{
+  "app": {
+    "name": "Phishing URL Detector",
+    "tagline": "Check any link before you click it"
+  },
+  "nav": {
+    "scan": "Scan link",
+    "batch": "Batch scan",
+    "history": "History"
+  },
+  "toggle": {
+    "language": "العربية",
+    "languageLabel": "Switch language",
+    "light": "Light mode",
+    "dark": "Dark mode"
+  },
+  "scan": {
+    "title": "Is this link safe?",
+    "subtitle": "Paste the suspicious link you received by SMS or e-mail. We'll analyze it instantly and explain how risky it is and why.",
+    "placeholder": "https://example.com/login",
+    "button": "Analyze",
+    "analyzing": "Analyzing…",
+    "examples": "Try an example:",
+    "error": "Couldn't reach the server. Make sure the backend is running."
+  },
+  "result": {
+    "score": "Risk score",
+    "outOf": "out of 100",
+    "reasons": "Why this rating",
+    "noReasons": "No warning signs were found in this link.",
+    "breakdown": "Link breakdown",
+    "parts": {
+      "scheme": "Protocol",
+      "subdomain": "Subdomain",
+      "domain": "Main domain",
+      "suffix": "Extension",
+      "path": "Path"
+    },
+    "copy": "Copy",
+    "copied": "Copied"
+  },
+  "severity": {
+    "high": "High",
+    "medium": "Medium",
+    "low": "Low"
+  },
+  "verdict": {
+    "safe": "Safe",
+    "suspicious": "Suspicious",
+    "dangerous": "Dangerous"
+  },
+  "batch": {
+    "title": "Scan many links at once",
+    "subtitle": "Paste a full SMS or e-mail. We'll extract every link and scan them all. Defanged links like hxxp and [.] are supported.",
+    "placeholder": "Dear customer, your account has been suspended. Please update here: https://…",
+    "button": "Extract & scan links",
+    "sample": "Use a sample message",
+    "total": "Total",
+    "invalid": "Invalid",
+    "link": "Link",
+    "score": "Score",
+    "verdict": "Verdict",
+    "details": "Details",
+    "show": "Show",
+    "hide": "Hide",
+    "max": "Up to 50 links at a time."
+  },
+  "history": {
+    "title": "Scan history",
+    "subtitle": "Every link you've checked, with quick statistics.",
+    "total": "Total scans",
+    "topRules": "Most frequent warning signs",
+    "filter": "Filter",
+    "all": "All",
+    "clear": "Clear history",
+    "confirmClear": "Delete the whole history? This can't be undone.",
+    "delete": "Delete",
+    "date": "Date",
+    "source": "Source",
+    "sources": {
+      "single": "Single",
+      "batch": "Batch"
+    },
+    "empty": "No scans yet. Start by checking a link!",
+    "prev": "Previous",
+    "next": "Next",
+    "page": "Page {{page}} of {{pages}}"
+  },
+  "footer": {
+    "disclaimer": "Results are estimates based on local heuristic rules and can't guarantee 100% safety. When in doubt, don't enter your details.",
+    "privacy": "Analysis runs entirely on your own server; links are never sent to third parties."
+  }
+}
